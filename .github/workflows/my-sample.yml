@@ -6,7 +6,7 @@ jobs:
     steps:
       - run: echo "the job triggered by a ${{ github.event_name }} event."
       - name: Check out repository code
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
       - run: echo "repo cloned to runner."
       - name: List files
         run: ls ${{ github.workspace }}
